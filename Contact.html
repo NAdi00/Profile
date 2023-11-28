@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("iIGZ6N-w43HCi74Hb");
+   })();
+
+   function SendEmail() {
+    var parrams = {
+      from_name : document.getElementById('name').value,
+      email_id: document.getElementById('email_id').value,
+      message : document.getElementById('message').value
+    }
+    emailjs.send('service_79iw4xe', "template_tdw28jg", parrams, "iIGZ6N-w43HCi74Hb").then(function (res) {
+      alert('Success', res.status)
+    })
+
+    //location.reload();
+  }
+</script>
+<link rel="stylesheet" href="main.css" >
+<link rel="stylesheet" href="main1.css" >
+<link rel="stylesheet" href="./css/bootstrap.css" >
+<link rel="stylesheet" href="help.css" >
+</head>
+<body>
+   <div class="navbar11">
+      <div class="page_name" style="float: inline-start;margin-left: 25px;" title="Developer Name">
+         <a href="index.html" style="text-decoration: none;color: white;"> Adivhaho</a></div>
+      <div> <a href="Contact.html"> Contact </a></div>
+      <div> <a href="About.html"> About </a></div>
+      <div> <a href="index.html"> Home </a></div>
+  </div>
+   <div class="message">
+   <div class="two_things">
+      <div><label>Name</label><br><input id="name" placeholder="name" 
+         style="margin-bottom: 10px;display: inline;" class="form-control" required></div>
+    <div><label>Email</label><br><input id="email_id" placeholder="Email" type="email" 
+      style="margin-bottom: 10px;display: inline;" class="form-control" required></div>
+   </div>
+   <div>
+      <textarea class="form-control" id="message" name="message" placeholder="Enter your message" 
+      rows="10" required="" style="height: 276px; display: block;margin-bottom: 10px;"></textarea></div>
+    <button type="submit" onclick="SendEmail()" class="btn w-100 btn-primary py-2" style="position: relative;left:0%">Done</button>
+   </div>
+   </div>
+</body>
+</html>

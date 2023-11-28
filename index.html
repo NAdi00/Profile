@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="main.css" >
+    <link rel="stylesheet" href="./css/bootstrap.css" >
+    <link rel="stylesheet" href="main1.css" >
+</head>
+<body>
+    <div class="navbar11">
+        <div class="page_name" style="float: inline-start;margin-left: 25px;" title="Developer Name">
+            <a href="index.html" style="text-decoration: none;color: white;"> Adivhaho</a></div>
+        <div> <a href="Contact.html"> Contact </a></div>
+        <div> <a href="About.html"> About </a></div>
+        <div> <a href="#"> Home </a></div>
+    </div>
+    <div class="main">
+    <div class="Content">
+        <div class="Name">Hi, I'm Adivhaho Nemukula</div>
+        <div class="Type">Frontend Developer</div>
+        <div class="content">
+        <p>I am a young developer with experience in HTML, CSS, and JavaScript. Currently,
+             I am in my final year at Witwatersrand University, pursuing my degree, 
+             and I proudly hold a certificate from the Google Developers Students Club. 
+
+             I am driven by a relentless desire to elevate my proficiency and expand my knowledge. 
+             I actively seek opportunities to showcase my abilities and potential. 
+             I am on the lookout for a professional environment that not only appreciates 
+             my current skill set but also supports my personal and career growth.
+             I am excited to find a space where I can nurture my passion for technology
+             and further hone my skills.</p></div>
+             <button type="button" class="btn btn-primary"><a href="Contact.html" style="text-decoration: none;color:white">Contact</a></button>
+    </div>
+    <div class="picture"></div>
+    <div class="Quick_game" onclick="options()" >
+        <div><a href="games.html"> QUICK<br>GAME </a></div>
+        <div class="options">
+            <div>PongGame</div>
+            <div>Dot/Cross</div>
+            <div>MemoryGame</div>
+            <div>StationaryCar</div>
+        </div>
+    </div>
+</div>
+<script>
+    var a = 0;
+    function options() {
+        a += 1;
+        if (a % 2 == 0) {
+            document.querySelector(".options").style.display = "inline";
+        }else {
+            document.querySelector(".options").style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>
