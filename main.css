@@ -35,7 +35,9 @@ html, body {
 }
 .picture {
     position:absolute;top: 10%;right: 10%;width :35%; height: 60%;
-    background-color: yellow;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),
+    url(WhatsApp\ Image\.jpeg);background-size:cover;border-radius: 15%;
+    box-shadow: 0 4px 6px aqua;
 }
 button {
     position: relative;left:40%;background-color: rgb(219, 29, 178);color: white;height:40px;width:22%;
