@@ -22,9 +22,9 @@
         <div class="Name">Hi, I'm Adivhaho Nemukula</div>
         <div class="Type">Frontend Developer</div>
         <div class="content">
-        <p>I am a young developer with experience in HTML, CSS, and JavaScript. Currently,
-             I am in my final year at Witwatersrand University, pursuing my degree, 
-             and I proudly hold a certificate from the Google Developers Students Club. 
+        <p>I am a young developer with experience in HTML, CSS, JavaScript, React, Python and Sql. Currently,
+            I am in my final year at Witwatersrand University, pursuing my degree, 
+            and I proudly hold a certificate from the Google Developers Students Club. 
 
              I am driven by a relentless desire to elevate my proficiency and expand my knowledge. 
              I actively seek opportunities to showcase my abilities and potential. 
@@ -35,26 +35,20 @@
              <button type="button" class="btn btn-primary"><a href="Contact.html" style="text-decoration: none;color:white">Contact</a></button>
     </div>
     <div class="picture"></div>
-    <div class="Quick_game" onclick="options()" >
-        <div><a href="games.html"> QUICK<br>GAME </a></div>
-        <div class="options">
-            <div>PongGame</div>
-            <div>Dot/Cross</div>
-            <div>MemoryGame</div>
-            <div>StationaryCar</div>
-        </div>
+</div>
+<div class="games" id="game">
+    <h1>Quick Games</h1>
+    <div id="001" class="Game">
+    <div> .<a href="./Games/Dot_Cross/Dot Cross.html" alt="game1">Dot Cross<br> </a></div>
+    <div> .<a href="./Games/Memory Game/Memory Game.html" alt="game2">Memory Game</a></div>
+    <div> .<a href="./Games/Stationary_Car/index.html" alt="game3">Traffic Racer<br> </a></div>
+    <div> .<a href="./Games/Ping Pong/index.html" alt="game4">Ping Pong<br> </a></div>
+    <div> .<a href="./Games/Flappy_Bird/Flappy_bird.html" alt="game5">Flappy_Bird<br> </div>
     </div>
 </div>
-<script>
-    var a = 0;
-    function options() {
-        a += 1;
-        if (a % 2 == 0) {
-            document.querySelector(".options").style.display = "inline";
-        }else {
-            document.querySelector(".options").style.display = "none";
-        }
-    }
-</script>
+<div style="position: absolute;top:140%;left:50%;
+padding-bottom: 50px;color: white;text-align: center;transform: translate(-50%, -50%);
+font-size: 125%;">Thank You For Visiting My Website</div>
+<script src="./index.js"></script>
 </body>
 </html>
