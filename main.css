@@ -18,13 +18,22 @@ html, body {
 .page_name {
     float: inline-start;margin-left: 25px;
 }
-.main {
-    background-color: aquamarine;
-    border: 2px solid black;
+
+@media screen and (min-width: 650px) {
+    .Content {
+        width:40%;position: absolute;top:25%;left:10%;
+        color: white;
+    }
+    .main {
+        background-color: aquamarine;
+        border: 2px solid black;
+    }
 }
-.Content {
-    width:40%;position: absolute;top:25%;left:10%;
-    color: white;
+@media screen and (max-width: 649px) {
+    .Content {
+        width:60%;position: relative;margin-top: 30px;left: 20%;
+        color: white;
+    }
 }
 .Name {
     font-size: 200%;
@@ -32,21 +41,43 @@ html, body {
 .Type {
     font-size: 125%;
 }
+@media screen and (min-width: 1150px){
 .picture {
     position:absolute;top: 10%;right: 10%;width :35%; height: 80%;
     background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),
     url(Web_pic.jpg);background-size:cover;border-radius: 15%;
-    box-shadow: 0 4px 6px aqua;
+    box-shadow: 0 4px 6px aqua;text-align: center;
+    }
 }
-button {
-    position: relative;left:40%;background-color: blueviolet;color: white;height:40px;width:22%;
-    margin-bottom: 10px;border-radius: 7px;
+@media screen and (min-width: 950px) and (max-width: 1149px){
+    .picture {
+        position:absolute;top: 10%;right: 10%;width :35%; height: 60%;
+        background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),
+        url(Web_pic.jpg);background-size:contain;border-radius: 15%;
+        box-shadow: 0 4px 6px aqua;text-align: center;
+        }
+    }
+@media screen and (min-width: 800px) and (max-width: 949px){
+    .picture {
+        position:absolute;top: 10%;right: 10%;width :35%; height: 50%;
+        background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),
+        url(Web_pic.jpg);background-size:contain;border-radius: 15%;
+        box-shadow: 0 4px 6px aqua;text-align: center;
+    }
+}
+@media screen and (min-width: 650px) and (max-width: 799px){
+    .picture {
+        position:absolute;top: 10%;right: 10%;width :35%; height: 45%;
+        background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),
+        url(Web_pic.jpg);background-size:contain;border-radius: 15%;
+        box-shadow: 0 4px 6px aqua;text-align: center;
+    }
 }
 
 /*///////////////////////////////*/
 
 .about {
-    position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);color: white;
+    position: absolute;top: 50%;left: 50%;transform: translate(-50%, -30%);color: white;
 }
 .message {
     width:50%;position: absolute;top: 50%;left:50%;transform: translate(-50%, -50%);
@@ -61,9 +92,20 @@ input {
 label {
     color: white;
 }
+@media screen and (min-width: 920px) {
 .games {
     height:150px;position: absolute;top:95%;left:20%;width:20%;text-align: center;
     background-color: aqua;border-radius: 5px;transition: width 1s, height 1s;
+    }
+    .Thanks {
+        position: absolute;top:140%;left:50%;
+        padding-bottom: 50px;color: white;text-align: center;transform: translate(-50%, -50%);
+        font-size: 125%;
+    }
+    button {
+        position: relative;left:40%;background-color: blueviolet;color: white;height:40px;width:22%;
+        margin-bottom: 10px;border-radius: 7px;
+    }
 }
 .games:hover {
     height: 200px;width: 50%;
@@ -79,4 +121,57 @@ label {
 }
 .Game > div {
     border-radius: 10px;background-color:blueviolet;margin-left: 10%;height: 75px;
+}
+@media screen and (min-width: 750px) and (max-width: 919px) {
+    .games {
+        height:140px;position: absolute;top:110%;left:20%;width:20%;text-align: center;
+        background-color: aqua;border-radius: 5px;transition: width 1s, height 1s;font-size: 70%;
+        }
+    .Thanks {
+            position: absolute;top:150%;left:50%;
+            padding-bottom: 50px;color: white;text-align: center;transform: translate(-50%, -50%);
+            font-size: 125%;
+        }
+    button {
+            position: relative;left:40%;background-color: blueviolet;color: white;height:40px;width:22%;
+            margin-bottom: 10px;border-radius: 7px;
+        }
+}
+@media screen and (min-width: 620px) and (max-width: 749px) {
+    .games {
+        height:140px;position: absolute;top:120%;left:20%;width:20%;text-align: center;
+        background-color: aqua;border-radius: 5px;transition: width 1s, height 1s;font-size: 70%;
+        }
+    .Thanks {
+            position: absolute;top:160%;left:50%;
+            padding-bottom: 50px;color: white;text-align: center;transform: translate(-50%, -50%);
+            font-size: 110%;
+        }
+    button {
+            position: relative;left:40%;background-color: blueviolet;color: white;height:40px;width:22%;
+            margin-bottom: 10px;border-radius: 7px;font-size: 75%;
+        }
+}
+@media screen and (max-width: 649px) {
+    .games {
+        height:120px;position: relative;left:40%;width:20%;text-align: center;
+        background-color: aqua;border-radius: 5px;transition: width 1s, height 1s;font-size: 70%;
+        }
+    .Thanks {
+            position: relative;text-align: center;
+            padding-bottom: 30px;color: white;margin-top: 20px;
+        }
+    .picture {
+            position:relative;right: 10%;width :35%; height: 45%;
+            background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),
+            url(Web_pic.jpg);background-size:contain;border-radius: 15%;
+            box-shadow: 0 4px 6px aqua;text-align: center;z-index: 2;
+    }
+    button {
+        position: relative;left:40%;background-color: blueviolet;color: white;height:40px;width:60px;
+        margin-bottom: 10px;border-radius: 7px;font-size: 75%;
+    }
+    .main{
+        background-color: none;border: none;
+    }
 }
