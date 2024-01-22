@@ -20,12 +20,13 @@ Home Page
 About Page
 Contact Page
 5 Games Pages (each page for each game)
-Project Author
+
+Project Author:
 Author: Adivhaho Nemukula
 
 Email: nemukuladi000@gmail.com
 
-Games
+Games:
 The portfolio website features 5 games built with raw JavaScript to add an entertaining element for visitors.
 
 How to Use
