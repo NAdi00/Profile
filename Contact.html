@@ -22,8 +22,9 @@
     emailjs.send('service_79iw4xe', "template_tdw28jg", parrams, "iIGZ6N-w43HCi74Hb").then(function (res) {
       alert('Success', res.status)
     })
-
-    //location.reload();
+    setTimeout(() => {
+      location.reload();
+    }, 3000);
   }
 </script>
 <link rel="stylesheet" href="main.css" >
