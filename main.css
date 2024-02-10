@@ -34,8 +34,9 @@ html, body {
     .Game {
         display: none
     }
-    .Game > div {
-        border-radius: 10px;background-color:blueviolet;margin-left: 10%;height: 75px;
+    .Game > a {
+        border-radius: 10px;background-color:blueviolet;margin-left: 10%;height: 75px;color: white;
+        display: flex;align-items: center;text-decoration: none;justify-content: center;
     }
 }
 @media screen and (max-width: 649px) {
@@ -46,10 +47,15 @@ html, body {
     .Game {
         display: block
     }
-    .Game > div {
-        height: 20px;border-top: 1px solid black ;
+    .Game > a {
+        height: 20px;border-top: 1px solid black ;color: white;
+        text-decoration: none;padding-bottom: 9.2px;
+        display: block;background-color:blueviolet;
     }
     
+}
+.Game > a:hover {
+    background-color: aqua;
 }
 .Name {
     font-size: 200%;
@@ -126,9 +132,9 @@ label {
 .games:hover {
     height: 200px;width: 50%;
 }
-.Game > div a{
+/* .Game > div a{
     color:white;text-decoration: none;
-}
+} */
 
 @media screen and (min-width: 750px) and (max-width: 919px) {
     .games {
